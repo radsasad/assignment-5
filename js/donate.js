@@ -6,12 +6,12 @@ document.getElementById('btn-donate-one').addEventListener('click', function () 
 
     if (isNaN(donateValue)) {
         alert('please insert valid number');
-        
+
     }
     else if (donateValue < 0) {
         alert('please insert positive number');
     }
-    else if(myCurrentBalance <= donateValue){
+    else if (myCurrentBalance <= donateValue) {
         alert('your balance is low');
     }
     else {
@@ -19,7 +19,17 @@ document.getElementById('btn-donate-one').addEventListener('click', function () 
         const currentBalance = donateValue + previousDonation;
         document.getElementById('current-balance-one').innerText = currentBalance;
         document.getElementById('my-balance').innerText = myBalance;
+        // for transaction 
+        const div = document.createElement('div');
+        div.classList.add('px-8', 'py-4', 'mt-8', 'rounded-lg', 'bg-red-50')
+        div.innerHTML = `
+            <h3 class="text-xl font-semibold"><span>${donateValue}</span> Donate for Flood at Noakhali, Bangladesh
+                </h3>
+            <p class="mt-2">Date : ${new Date()} </p>
         
+        `;
+       console.log(div)
+       document.getElementById('transaction-container').appendChild(div)
     }
 
 })
@@ -32,12 +42,12 @@ document.getElementById('btn-donate-two').addEventListener('click', function () 
 
     if (isNaN(donateValueOne)) {
         alert('please insert valid number');
-        
+
     }
     else if (donateValueOne < 0) {
         alert('please insert positive number');
     }
-    else if(myCurrentBalance <= donateValueOne){
+    else if (myCurrentBalance <= donateValueOne) {
         alert('your balance is low');
     }
     else {
@@ -45,6 +55,17 @@ document.getElementById('btn-donate-two').addEventListener('click', function () 
         const currentBalance = donateValueOne + previousDonation;
         document.getElementById('current-balance-two').innerText = currentBalance;
         document.getElementById('my-balance').innerText = myBalance;
+        // for transaction 
+        const div = document.createElement('div');
+        div.classList.add('px-8', 'py-4', 'mt-8', 'rounded-lg', 'bg-red-50')
+        div.innerHTML = `
+            <h3 class="text-xl font-semibold"><span>${donateValueOne}</span> Donate for Flood Relief in Feni,Bangladesh 
+                </h3>
+            <p class="mt-2">Date : ${new Date()} </p>
+        
+        `;
+       console.log(div)
+       document.getElementById('transaction-container').appendChild(div)
     }
 
 })
@@ -58,12 +79,12 @@ document.getElementById('btn-donate-three').addEventListener('click', function (
 
     if (isNaN(donateValueTwo)) {
         alert('please insert valid number');
-        
+
     }
     else if (donateValueTwo < 0) {
         alert('please insert positive number');
     }
-    else if(myCurrentBalance <= donateValueTwo){
+    else if (myCurrentBalance <= donateValueTwo) {
         alert('your balance is low');
     }
     else {
@@ -71,6 +92,17 @@ document.getElementById('btn-donate-three').addEventListener('click', function (
         const currentBalance = donateValueTwo + previousDonation;
         document.getElementById('current-balance-three').innerText = currentBalance;
         document.getElementById('my-balance').innerText = myBalance;
+        // for transaction 
+        const div = document.createElement('div');
+        div.classList.add('px-8', 'py-4', 'mt-8', 'rounded-lg', 'bg-red-50')
+        div.innerHTML = `
+            <h3 class="text-xl font-semibold"><span>${donateValueTwo}</span> Aid for Injured in the Quota Movement 
+                </h3>
+            <p class="mt-2">Date : ${new Date()} </p>
+        
+        `;
+       console.log(div)
+       document.getElementById('transaction-container').appendChild(div)
     }
 
 })
