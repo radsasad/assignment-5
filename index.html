@@ -30,14 +30,14 @@
     </header>
     <main class="pb-10 m-auto lg:w-3/5">
         <div class="sticky flex justify-center py-5 top-20 bg-slate-200 gap-7">
-            <button class="px-5 py-2 font-bold bg-white border rounded-lg border-zinc-300"
+            <button id="btn-show-donation" class="px-5 py-2 font-bold bg-white border rounded-lg border-zinc-300"
                 type="button">Donation</button>
-            <button class="px-5 py-2 font-bold bg-white border rounded-lg border-zinc-300"
+            <button id="btn-show-history" class="px-5 py-2 font-bold bg-white border rounded-lg border-zinc-300"
                 type="button">History</button>
         </div>
         <!--start history-->
         <!--end history-->
-        <div class="hidden mt-8">
+        <div id="transaction-section" class="hidden mt-8">
             <!-- <div class="text-center">
                 <h1 class="text-3xl font-semibold text-slate-600">Donation History</h1>
             </div> -->
@@ -54,7 +54,7 @@
 
         </div>
         <!--donation start-->
-        <div class="">
+        <div id="donation-section" class="">
             <div class="gap-10 p-5 mt-8 rounded-lg bg-slate-50 lg:flex">
                 <div class="mb-2 lg:w-2/5">
                     <img src="images/noakhali.png" alt="" srcset="">
@@ -139,6 +139,7 @@
     </main>
 <script src="js/donate.js"></script>
 <script src="js/utilities.js"></script>
+<script src="js/feature.js"></script>
 </body>
 
 </html>

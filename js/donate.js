@@ -19,6 +19,7 @@ document.getElementById('btn-donate-one').addEventListener('click', function () 
         const currentBalance = donateValue + previousDonation;
         document.getElementById('current-balance-one').innerText = currentBalance;
         document.getElementById('my-balance').innerText = myBalance;
+        
     }
 
 })
