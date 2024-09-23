@@ -1,0 +1,14 @@
+.btn-new {
+    padding: 8px 25px;
+    font-size: 16px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .btn-new.active {
+    background-color:rgb(190 242 100); /* Active button background */
+    color: rgb(15, 15, 15);
+    font-weight: bold;
+  }

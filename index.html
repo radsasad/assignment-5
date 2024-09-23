@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -30,11 +31,16 @@
     </header>
     <main class="pb-10 m-auto lg:w-3/5">
         <div class="sticky flex justify-center py-5 top-20 bg-slate-200 gap-7">
-            <button id="btn-show-donation" class="px-5 py-2 font-bold bg-white border rounded-lg border-zinc-300"
+            <div id="btn-show-donation">
+                <button  id="btn1" class="btn-new active " onclick="setActive('btn1')"
                 type="button">Donation</button>
-            <button id="btn-show-history" class="px-5 py-2 font-bold bg-white border rounded-lg border-zinc-300"
+            </div>
+            <div id="btn-show-history">
+                <button id="btn2" class="btn-new" onclick="setActive('btn2')"
                 type="button">History</button>
+            </div>
         </div>
+        
         <!--start history-->
         <!--end history-->
         <div id="transaction-section" class="hidden mt-8">
@@ -133,6 +139,7 @@
 <script src="js/donate.js"></script>
 <script src="js/utilities.js"></script>
 <script src="js/feature.js"></script>
+<script src="js/buttonActive.js"></script>
 </body>
 
 </html>
