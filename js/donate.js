@@ -3,6 +3,7 @@ document.getElementById('btn-donate-one').addEventListener('click', function () 
     const donateValue = getInputValueById('donate-value-one');
     const previousDonation = getTextBalanceById('current-balance-one');
     const myCurrentBalance = getTextBalanceById('my-balance');
+    
 
     if (isNaN(donateValue)) {
         alert('please insert valid number');
@@ -19,6 +20,7 @@ document.getElementById('btn-donate-one').addEventListener('click', function () 
         const currentBalance = donateValue + previousDonation;
         document.getElementById('current-balance-one').innerText = currentBalance;
         document.getElementById('my-balance').innerText = myBalance;
+        
         // for transaction 
         const div = document.createElement('div');
         div.classList.add('px-8', 'py-4', 'mt-8', 'rounded-lg', 'bg-red-50')
