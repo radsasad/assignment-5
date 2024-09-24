@@ -22,6 +22,7 @@ document.getElementById('btn-donate-one').addEventListener('click', function () 
         document.getElementById('my-balance').innerText = myBalance;
         const inputValueClear = document.getElementById('donate-value-one');
         inputValueClear.value = ''
+        
         // for transaction 
         const div = document.createElement('div');
         div.classList.add('px-8', 'py-4', 'mt-8', 'rounded-lg', 'bg-red-50')
@@ -32,7 +33,9 @@ document.getElementById('btn-donate-one').addEventListener('click', function () 
         
         `;
         console.log(div)
-        document.getElementById('transaction-container').appendChild(div)
+        document.getElementById('transaction-container').appendChild(div);
+        document.getElementById('btn-donate-one').setAttribute(my_modal_1.showModal())
+
     }
 
 })
@@ -59,7 +62,8 @@ document.getElementById('btn-donate-two').addEventListener('click', function () 
         document.getElementById('current-balance-two').innerText = currentBalance;
         document.getElementById('my-balance').innerText = myBalance;
         const inputValueClear = document.getElementById('donate-value-two');
-        inputValueClear.value = ''
+        inputValueClear.value = '';
+        
         // for transaction 
         const div = document.createElement('div');
         div.classList.add('px-8', 'py-4', 'mt-8', 'rounded-lg', 'bg-red-50')
@@ -70,7 +74,8 @@ document.getElementById('btn-donate-two').addEventListener('click', function () 
         
         `;
         console.log(div)
-        document.getElementById('transaction-container').appendChild(div)
+        document.getElementById('transaction-container').appendChild(div);
+        document.getElementById('btn-donate-two').setAttribute(my_modal_1.showModal())
     }
 
 })
@@ -98,7 +103,8 @@ document.getElementById('btn-donate-three').addEventListener('click', function (
         document.getElementById('current-balance-three').innerText = currentBalance;
         document.getElementById('my-balance').innerText = myBalance;
         const inputValueClear = document.getElementById('donate-value-three');
-        inputValueClear.value = ''
+        inputValueClear.value = '';
+       
         // for transaction 
         const div = document.createElement('div');
         div.classList.add('px-8', 'py-4', 'mt-8', 'rounded-lg', 'bg-red-50')
@@ -109,7 +115,8 @@ document.getElementById('btn-donate-three').addEventListener('click', function (
         
         `;
         console.log(div)
-        document.getElementById('transaction-container').appendChild(div)
+        document.getElementById('transaction-container').appendChild(div);
+        document.getElementById('btn-donate-three').setAttribute(my_modal_1.showModal());
     }
 
 })
