@@ -3,7 +3,7 @@ document.getElementById('btn-donate-one').addEventListener('click', function () 
     const donateValue = getInputValueById('donate-value-one');
     const previousDonation = getTextBalanceById('current-balance-one');
     const myCurrentBalance = getTextBalanceById('my-balance');
-    
+
 
     if (isNaN(donateValue)) {
         alert('please insert valid number');
@@ -20,7 +20,8 @@ document.getElementById('btn-donate-one').addEventListener('click', function () 
         const currentBalance = donateValue + previousDonation;
         document.getElementById('current-balance-one').innerText = currentBalance;
         document.getElementById('my-balance').innerText = myBalance;
-        
+        const inputValueClear = document.getElementById('donate-value-one');
+        inputValueClear.value = ''
         // for transaction 
         const div = document.createElement('div');
         div.classList.add('px-8', 'py-4', 'mt-8', 'rounded-lg', 'bg-red-50')
@@ -30,8 +31,8 @@ document.getElementById('btn-donate-one').addEventListener('click', function () 
             <p class="mt-2">Date : ${new Date()} </p>
         
         `;
-       console.log(div)
-       document.getElementById('transaction-container').appendChild(div)
+        console.log(div)
+        document.getElementById('transaction-container').appendChild(div)
     }
 
 })
@@ -57,6 +58,8 @@ document.getElementById('btn-donate-two').addEventListener('click', function () 
         const currentBalance = donateValueOne + previousDonation;
         document.getElementById('current-balance-two').innerText = currentBalance;
         document.getElementById('my-balance').innerText = myBalance;
+        const inputValueClear = document.getElementById('donate-value-two');
+        inputValueClear.value = ''
         // for transaction 
         const div = document.createElement('div');
         div.classList.add('px-8', 'py-4', 'mt-8', 'rounded-lg', 'bg-red-50')
@@ -66,8 +69,8 @@ document.getElementById('btn-donate-two').addEventListener('click', function () 
             <p class="mt-2">Date : ${new Date()} </p>
         
         `;
-       console.log(div)
-       document.getElementById('transaction-container').appendChild(div)
+        console.log(div)
+        document.getElementById('transaction-container').appendChild(div)
     }
 
 })
@@ -94,6 +97,8 @@ document.getElementById('btn-donate-three').addEventListener('click', function (
         const currentBalance = donateValueTwo + previousDonation;
         document.getElementById('current-balance-three').innerText = currentBalance;
         document.getElementById('my-balance').innerText = myBalance;
+        const inputValueClear = document.getElementById('donate-value-three');
+        inputValueClear.value = ''
         // for transaction 
         const div = document.createElement('div');
         div.classList.add('px-8', 'py-4', 'mt-8', 'rounded-lg', 'bg-red-50')
@@ -103,8 +108,8 @@ document.getElementById('btn-donate-three').addEventListener('click', function (
             <p class="mt-2">Date : ${new Date()} </p>
         
         `;
-       console.log(div)
-       document.getElementById('transaction-container').appendChild(div)
+        console.log(div)
+        document.getElementById('transaction-container').appendChild(div)
     }
 
 })
